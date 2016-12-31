@@ -8,6 +8,6 @@
 
 # coding: utf-8
 
-5.times do |no|
-  User.create(:name => "momo #{no}",:email => "momo #{no} @gmail.com")
+100.times do |no|
+  User.create(:name => "momo#{no}",:email => "momo#{no}@gmail.com")
 end
