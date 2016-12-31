@@ -7,11 +7,12 @@
     <tr>
       <th>Name</th>
       <th>Email</th>
-      <th colspan="3"></th>
+      <th colspan="10"></th>
     </tr>
   </thead>
 
   <tbody>
+    <%= select_tag :user, options_from_collection_for_select(@users, :name, :email), include_blank: true %>
     <% @users.each do |user| %>
       <tr>
         <td><%= user.name %></td>

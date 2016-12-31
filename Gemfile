@@ -1,13 +1,20 @@
 source 'https://rubygems.org'
 
-##################
-#自分で追加したもの
-gem 'execjs'
-##################
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5.1'
 # Use sqlite3 as the database for Active Record
+
+##################
+# coding: utf-8
+#自分で追記したもの
+gem 'execjs'
+# Use jquery-UI as the JavaScript library
+gem 'jquery-ui-rails', '~> 4.2.1'
+
+gem 'bootstrap-sass'
+
+gem "select2-rails"
+
 group :development do
   gem 'sqlite3'
 end
@@ -16,6 +23,7 @@ group :production do
   gem 'thin'
   gem 'rails_12factor'
 end
+##################
 
 
 # Use SCSS for stylesheets
